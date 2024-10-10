@@ -55,10 +55,10 @@ const Port = ({ q, r, type, direction }) => {
   };
 
   return (
-    <Hexagon q={q} r={r} s={-q-r} className={`port ${type} ${direction}`} fill="none">
+    <Hexagon q={q} r={r} s={-q-r} className={`port ${type} ${direction}`} fill="transparent" stroke="none">
       <g transform={`rotate(${direction === 'W' ? 270: direction === 'NW' ? 330 : direction === 'NE' ? 30 : direction === 'E' ? 90 : direction === 'SE' ? 150 : direction === 'S' ? 240 : direction === 'SW' ? 210 : 360})`}>
         {getPortIcon()}
-        <polygon points="0,-10 8,-5 8,5 0,10 -8,5 -8,-5" fill="none"/>
+        <polygon points="0,-10 8,-5 8,5 0,10 -8,5 -8,-5" fill="transparent" stroke="none"/>
       </g>
     </Hexagon>
   );

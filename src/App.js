@@ -168,31 +168,28 @@ function App() {
 
   return (
     <div className="App">
-      <div className="background">
-        <h1 className="title">Catan Board Generator</h1>
-        <div className="board-container">
-          <HexGrid width={viewportSize.width * 0.9} height={viewportSize.height * 0.7}>
-            <Layout 
-              size={{ x: 8.5, y: 8.5 }} 
-              flat={false} 
-              spacing={1.075} 
-              origin={{ x: 15, y: 0 }}
-            >
-              {board.hexagons.map((hex, index) => React.cloneElement(hex, {
-                children: hex.props.number && <NumberTile number={hex.props.number} />
-              }))}
-              {board.ports.map((port, index) => (
-                <Port key={index} q={port.q} r={port.r} type={port.type} direction={port.dir} />
-              ))}
-            </Layout>
-          </HexGrid>
-        </div>
-        <button onClick={handleRegenerateBoard} className="regenerate-button">
-          <span role="img" aria-label="Regenerate">🔄</span>
-          Regenerate Board
-          <span className="button-glow"></span>
-        </button>
+      <h1 className="title">Catan Board Generator</h1>
+      <div className="board-container">
+        <HexGrid width={viewportSize.width * 0.9} height={viewportSize.height * 0.8}>
+          <Layout 
+            size={{ x: 8.5, y: 8.5 }} 
+            flat={false} 
+            spacing={1.075} 
+            origin={{ x: 15, y: 0 }}
+          >
+            {board.hexagons.map((hex, index) => React.cloneElement(hex, {
+              children: hex.props.number && <NumberTile number={hex.props.number} />
+            }))}
+            {board.ports.map((port, index) => (
+              <Port key={index} q={port.q} r={port.r} type={port.type} direction={port.dir} />
+            ))}
+          </Layout>
+        </HexGrid>
       </div>
+      <button onClick={handleRegenerateBoard} className="regenerate-button">
+        <span role="img" aria-label="Regenerate">🔄</span>
+        Regenerate Board
+      </button>
     </div>
   );
 }
