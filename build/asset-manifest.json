@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/catan-board-generator/static/css/main.d3ec41e5.css",
+    "main.js": "/catan-board-generator/static/js/main.3b746e32.js",
+    "static/js/453.2a10b280.chunk.js": "/catan-board-generator/static/js/453.2a10b280.chunk.js",
+    "index.html": "/catan-board-generator/index.html",
+    "main.d3ec41e5.css.map": "/catan-board-generator/static/css/main.d3ec41e5.css.map",
+    "main.3b746e32.js.map": "/catan-board-generator/static/js/main.3b746e32.js.map",
+    "453.2a10b280.chunk.js.map": "/catan-board-generator/static/js/453.2a10b280.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3ec41e5.css",
+    "static/js/main.3b746e32.js"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://nicholaslambiase.github.io/catan-board-generator",
+  "homepage": "http://NicholasLambiase.github.io/catan-board-generator",
   "name": "catan-board-generator",
   "version": "0.1.0",
   "private": true,
@@ -14,11 +14,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --max-warnings 0 start",
+    "start": "react-scripts start start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts --max-warnings 0 build",
-    "test": "react-scripts --max-warnings 0 test"
+    "build": "react-scripts build",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
