@@ -1,4 +1,5 @@
 {
+  "homepage": "http://nicholaslambiase.github.io/catan-board-generator",
   "name": "catan-board-generator",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start --max-warnings 0 start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts --max-warnings 0 build",
     "test": "react-scripts --max-warnings 0 test"
   },
@@ -37,6 +40,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
   }
