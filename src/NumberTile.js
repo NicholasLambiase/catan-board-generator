@@ -28,7 +28,8 @@ const NumberTile = ({ number }) => {
           cx={startX + i * dotSpacing} 
           cy="1.75" 
           r={dotSize} 
-          fill="black" 
+          fill="black"
+          stroke="none"
         />
       );
     }
@@ -38,7 +39,7 @@ const NumberTile = ({ number }) => {
   return (
     <g>
       <circle r={circleRadius} fill={lightTan} />
-      <Text fontSize={fontSize} y="0.5" fill={getProbabilityColor(number)}>{number}</Text>
+      <Text fontSize={fontSize} y="0.5" fill={getProbabilityColor(number)} stroke="none">{number}</Text>
       <g fill={getProbabilityColor(number)}>
         {getDots(number)}
       </g>

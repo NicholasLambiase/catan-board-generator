@@ -59,12 +59,8 @@ function App() {
       { row: 2, count: 3, startQ: -3 },
     ];
 
-    const hexSize = { x: 8.5, y: 8.5 };
-    const hexSpacing = 1.025;
-
     // Shuffle terrain types
     const shuffledTerrains = shuffleArray(terrainTypes);
-    const shuffledNumbers = shuffleArray(numbers);
 
     const hexagons = [];
     let terrainIndex = 0;
@@ -83,6 +79,7 @@ function App() {
             r={row} 
             s={-q-row} 
             style={{ fill: fillColor }}
+            stroke="black" strokeWidth={0.2}
             terrain={terrain}
           />
         );
@@ -178,7 +175,7 @@ function App() {
             <Layout 
               size={{ x: 8.5, y: 8.5 }} 
               flat={false} 
-              spacing={1.025} 
+              spacing={1.075} 
               origin={{ x: 15, y: 0 }}
             >
               {board.hexagons.map((hex, index) => React.cloneElement(hex, {
