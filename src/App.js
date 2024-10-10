@@ -16,12 +16,12 @@ const terrainTypes = [
 
 // Define terrain colors
 const terrainColors = {
-  desert: '#f4a460',  // Sandy brown
-  grain: '#daa520',   // Goldenrod
-  sheep: '#90ee90',   // Light green
-  wood: '#228b22',    // Forest green
-  ore: '#708090',     // Slate gray
-  brick: '#c24720',   // Firebrick
+  desert: { fill: '#f4a460', glow: 'rgba(244, 164, 96, 0.7)' },
+  grain: { fill: '#daa520', glow: 'rgba(218, 165, 32, 0.7)' },
+  sheep: { fill: '#90ee90', glow: 'rgba(144, 238, 144, 0.7)' },
+  wood: { fill: '#228b22', glow: 'rgba(34, 139, 34, 0.7)' },
+  ore: { fill: '#708090', glow: 'rgba(112, 128, 144, 0.7)' },
+  brick: { fill: '#c24720', glow: 'rgba(194, 71, 32, 0.7)' },
 };
 
 // Define numbers for the tiles
@@ -70,7 +70,7 @@ function App() {
       for (let i = 0; i < count; i++) {
         const q = startQ + i;
         const terrain = shuffledTerrains[terrainIndex];
-        const fillColor = terrainColors[terrain];
+        const fillColor = terrainColors[terrain].fill;
 
         hexagons.push(
           <Hexagon 
@@ -78,9 +78,14 @@ function App() {
             q={q} 
             r={row} 
             s={-q-row} 
-            style={{ fill: fillColor }}
-            stroke="black" strokeWidth={0.2}
+            style={{ 
+              fill: terrainColors[terrain].fill,
+              '--glow-color': terrainColors[terrain].glow
+            }}
+            stroke="black" 
+            strokeWidth={0.2}
             terrain={terrain}
+            className='resource-hex'
           />
         );
 
