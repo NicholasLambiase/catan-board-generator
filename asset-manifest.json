@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/catan-board-generator/static/css/main.0a07d62d.css",
+    "main.css": "/catan-board-generator/static/css/main.384557c0.css",
     "main.js": "/catan-board-generator/static/js/main.aabe82f4.js",
     "static/js/453.2a10b280.chunk.js": "/catan-board-generator/static/js/453.2a10b280.chunk.js",
     "index.html": "/catan-board-generator/index.html",
-    "main.0a07d62d.css.map": "/catan-board-generator/static/css/main.0a07d62d.css.map",
+    "main.384557c0.css.map": "/catan-board-generator/static/css/main.384557c0.css.map",
     "main.aabe82f4.js.map": "/catan-board-generator/static/js/main.aabe82f4.js.map",
     "453.2a10b280.chunk.js.map": "/catan-board-generator/static/js/453.2a10b280.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a07d62d.css",
+    "static/css/main.384557c0.css",
     "static/js/main.aabe82f4.js"
   ]
 }
