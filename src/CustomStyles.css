@@ -145,6 +145,8 @@
   filter: drop-shadow(0 0 2px var(--glow-color))
          drop-shadow(0 0 4px var(--glow-color))
          drop-shadow(0 0 6px var(--glow-color))
-         drop-shadow(0 0 8px var(--glow-color))
-         drop-shadow(0 0 10px var(--glow-color));
+}
+
+.port-hexagon {
+  fill: rgba(0, 0, 0, 0);
 }
